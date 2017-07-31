@@ -4,3 +4,72 @@
                         <li>财经新闻</li>
                         <li>Initium 端传媒</li>
                     </ul>
+
+
+<script>
+            var pie = echarts.init(document.getElementById('pie'));
+
+            var option = {
+                backgroundColor: '#fffff',
+
+
+                tooltip : {
+                    trigger: 'item',
+                    formatter: "{b} : {c} 小时／月 ({d}%)"
+                },
+
+                visualMap: {
+                    show: false,
+                    min: 80,
+                    max: 600,
+                    inRange: {
+                        colorLightness: [0, 1]
+                    }
+                },
+                series : [
+                    {
+                        name:'技能组成',
+                        type:'pie',
+                        radius : '55%',
+                        center: ['50%', '50%'],
+                        data:[
+                            {value:335, name:'数据分析'},
+                            {value:310, name:'文案撰写'},
+                            {value:274, name:'平面设计'},
+                            {value:235, name:'交互设计'},
+                            {value:400, name:'数据抓取'}
+                        ].sort(function (a, b) { return a.value - b.value; }),
+                        roseType: 'radius',
+                        label: {
+                            normal: {
+                                textStyle: {
+                                    color: 'rgba(0, 0, 0, 0.3)'
+                                }
+                            }
+                        },
+                        labelLine: {
+                            normal: {
+                                lineStyle: {
+                                    color: 'rgba(0, 0, 0, 0.3)'
+                                },
+                                smooth: 0.2,
+                                length: 10,
+                                length2: 20
+                            }
+                        },
+                        itemStyle: {
+                            normal: {
+                                color: '#c23531',
+                                shadowBlur: 200,
+                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            }
+                        },
+
+                        animationType: 'scale',
+                        animationEasing: 'elasticOut',
+                        animationDelay: function (idx) {
+                            return Math.random() * 200;
+                        }
+                    }
+                ]
+            }
