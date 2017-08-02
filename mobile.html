@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        div {
+            div {
             background-color: goldenrod;
             margin-top: 1em;
             height: 50px
@@ -12,6 +12,29 @@
         #main {
             height: 150px
         }
+        
+        @media(min-width:768px) {
+            #main,
+            #ads {
+                height: 200px;
+                display: inline-block;
+            }
+            #main {
+                width: 80%
+            }
+            #ads {
+                width: 15%
+            }
+            @media(min-width:1000px) {
+                #main {
+                    60%;
+                }
+                #sidebar {
+                    display: inline-block;
+                    height: 200px;
+                    width: 20%;
+                }
+            }
     </style>
 </head>
 
@@ -21,7 +44,7 @@
     <div id="header" style="background-color:aquamarine">Header</div>
     <div id="Ads" style="background-color:aliceblue">Ads</div>
     <div id="main" style="background-color:darkgoldenrod">Main</div>
-    <div id="siderbar" style="background-color:aqua">sidebar</div>
+    <div id="sidebar" style="background-color:aqua">sidebar</div>
     <div id="footer" style="background-color:blueviolet">footer</div>
 
 </body>
