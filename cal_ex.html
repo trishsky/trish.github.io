@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>房價收入比</h1>
+                <br>
+            </div>
+            <div class="col-md-12">
+                <label for="">你所居住的城市</label>
+                <button id="btn1">北京</button>
+                <button id="btn2">深圳</button>
+                <br><br>
+                <!-- <input id="num1" class="form-control" type="text" placeholder='暫時只有北京和深圳的數據，住在北京請輸入"beijing"，住在深圳請輸入"shenzhen""'> -->
+                <label for="">每月家庭收入</label>
+                <input id="usernum" class="form-control" type="text" placeholder="不吃不喝哦">
+                <br>
+                <button id="calculate" class="btn btn-lg btn-primary">想有個屬於自己的瓦遮頭，你要不吃不喝：</button>
+                <br><br>
+                <!-- <label for="">Result:</label> -->
+                <input id="result" class="form-control" type="text">
+                <p>取值只是個均價，沒甚麼意義啦，不要太認真</p>
+            </div>
+            <!-- <script>
+                $(
+                    function() {
+                        $('#calculate').click(function() {
+                            alert('click');
+                        })
+                    }
+                )
+            </script> -->
+        </div>
+
+    </div>
+    <script src="calculator_ex.js">
+    </script>
+</body>
+
+
+</html>
