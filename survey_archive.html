@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+    <div id="fullpage">
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div data-question="q1" class="question col-md-6 col-md-offset-3 ">
+                        <h2>test 1</h2>
+                        <button data-option="Yes" class="option btn form-control btn-primary ">Yes</button>
+                        <br>
+                        <button data-option="No" class="option btn form-control btn-danger ">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="question col-md-6 col-md-offset-3 ">
+                        <h2>test 2</h2>
+                        <button class="option btn form-control btn-primary ">Yes</button>
+                        <br>
+                        <button class="option btn form-control btn-danger ">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="question col-md-6 col-md-offset-3 ">
+                        <h2>test 3</h2>
+                        <button class="option btn form-control btn-primary ">Yes</button>
+                        <br>
+                        <button class="option btn form-control btn-danger ">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section active ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-6 col-md-offset-3 ">
+                        <h2>Thanks!</h2>
+                        <button id="summit " class="btn ">Summit result</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        $(document).ready(function() {
+
+            var postData = function(url, data, callback) {
+                $.ajax({
+                    url: url,
+                    type: "POST",
+                    data: JSON.stringify(data),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: callback
+                })
+            }
+
+            var answers = {
+                q1: null,
+                q2: null,
+            }
+
+            $('#fullpage').fullpage();
+
+            $('.option').click(function() {
+                var me = $(this);
+                $.fn.fullpage.moveSectionDown();
+                var question = me.closest('.question').data('question');
+                var option = me.data('option');
+                answer[question] = option;
+                // console.log(me.data('option'))
+            })
+
+            $('#summit').click(function() {
+                console.log(answer);
+                postData('http://localhost:3000/answer',
+                    answers,
+                    function() {
+                        console.log('here');
+                    })
+
+            })
+        });
+    </script>
+
+</body>
+
+</html>
