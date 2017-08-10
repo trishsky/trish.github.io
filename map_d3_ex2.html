@@ -1,0 +1,146 @@
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="js/d3.v4.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <style>
+        #chart {
+            margin-top: 1em;
+            border: 1px dashed lightgrey;
+            width: 350px;
+            height: 250px;
+        }
+        
+        #chart svg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>Sichuan Earthquake</h1>
+                    <div id="chart">
+                        <svg></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var svg = d3.select('#chart svg')
+
+        var projection = d3
+            .geoMercator()
+            .center([106.029052734375,
+                30.741835717889792
+            ])
+            .scale(900)
+            .translate([300 / 2, 150 / 2])
+
+        d3.json('data/si_chuan_geo.json', function(sichuan) {
+            // console.log(sichuan)
+            var geoPath = d3
+                .geoPath()
+                .projection(projection)
+
+            // console.log(sichuan.features)
+
+            svg.selectAll('path')
+                .data(sichuan.features)
+                .enter()
+                .append('path')
+                .attr('d', geoPath)
+                .style('stroke', 'grey')
+                .style('fill', 'white')
+        })
+
+        // d3.json('data/earthquake.geo.json', function(earthquake) {
+        //     svg.selectAll('circle')
+        //         .data(earthquake.features)
+        //         .enter()
+        //         .append('circle')
+        //         .attr('cx', function(d) {
+        //             return projection(d.geometry.coordinates)[0]
+        //         })
+        //         .attr('cy', function(d) {
+        //             return projection(d.geometry.coordinates)[1]
+        //         })
+        //         .attr('fill', 'rgba(255,0,0,0.2)')
+        //         .attr('r', 2)
+        //         .transition()
+        //         .duration(2000)
+        //         .attr('r', function(d, i) {
+        //             return (d.properties.mag - 4.5) * 10
+        //         })
+        //         .attr('fill', 'rgba(255,0,0,0)')
+
+        // })
+
+        d3.json('data/earthquake-by-year.json', function(earthquakeByYear) {
+            var yearText = svg.append('text')
+            yearText
+                .attr('x', '0.5em')
+                .attr('y', '1em')
+                .text('Year:')
+
+            var yearIndex = 0
+            d3.interval(function() {
+                yearText.text('Year:' + earthquakeByYear[yearIndex]['year'])
+                svg.selectAll('circle')
+                    .data(earthquakeByYear[yearIndex]['data'])
+                    .enter()
+                    .append('circle')
+                    // .attr('r', function(d, i) {
+                    //     return Math.pow((d.properties.mag - 4), 2.5)
+                    // })
+                    .attr('cx', function(d) {
+                        return projection(d.coordinates)[0]
+                    })
+                    .attr('cy', function(d) {
+                        return projection(d.coordinates)[1]
+                    })
+                    .style('fill', 'rgba(255,0,0,0.3)')
+                    .attr('r', 5)
+                    .transition()
+                    .duration(2000)
+                    .attr('r', function(d, i) {
+                        return Math.pow((d.mag - 4), 2.5) * 5
+                    })
+                    .attr('fill', 'rgba(200, 100, 150, 0.05)')
+                    .on('end', function() {
+                        d3.select(this).remove()
+                    })
+                yearIndex = (yearIndex + 1) % earthquakeByYear.length;
+            }, 200)
+        })
+    </script>
+
+
+</body>
+
+
+
+</html>

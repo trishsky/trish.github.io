@@ -1,0 +1,194 @@
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="js/d3.v4.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="data/all_data.js"></script>
+
+</head>
+
+
+<body>
+
+    <div id="chart">
+        <div>Chart</div>
+        <svg width="400" height="350">
+        </svg>
+    </div>
+
+    <script>
+        var svg = d3.select('#chart svg')
+            // .append('circle')
+            // .attr('cx', 50)
+            // .attr('cy', 100)
+            // .attr('r', 30)
+
+        var margin = 30
+
+        var gdpScale = d3.scaleLinear()
+            .domain([0, 300000])
+            .range([0, 350 - margin])
+
+        var lifeScale = d3.scaleLinear()
+            .domain([0, 80])
+            .range([200, 20 + margin])
+
+        var populationScale = d3.scaleLinear()
+            .domain([0, 200])
+            .range([0, 20])
+
+
+
+
+        //画图f(x)
+        function updateChart(data) {
+
+            var circles = svg
+                //circle是d3指定的
+                .selectAll('circle')
+                .data(data, function(d, i) {
+                    //key-binding
+                    return d['Country']
+                })
+                //circle的样式：
+            circles
+                .enter()
+                .append('circle')
+                .style('fill', 'rgba(255,0,0,0.6)')
+                //新旧data合在一起：
+                .merge(circles)
+                .transition()
+                .attr('r', function(d, i) {
+                    // console.log(d)
+                    // console.log(i)
+                    return populationScale(d['Population'])
+                })
+                .attr('cx', function(d, i) {
+                    // console.log(d['GDP'])
+                    // console.log(gdpScale(d['GDP']))
+                    return gdpScale(d['GDP'])
+                })
+                .attr('cy', function(d, i) {
+                    return lifeScale(d['Life'])
+                })
+                .style('fill', function(d, i) {
+                    if (d['Country'] == "A") {
+                        return 'rgba(66,134,244,0.6)';
+                    } else if (d['Country'] == "B") {
+                        return 'rgba(244,241,66,0.6)';
+                    } else {
+                        return 'rgba(255,0,0,0.6)'
+                    }
+                })
+
+
+            circles
+                .exit()
+                .transition()
+                .style('fill', 'rgba(255,0,0,1)')
+                .on('end', function() {
+                    d3.select(this).remove()
+                })
+
+            var texts = svg
+                .selectAll('text.label')
+                .data(data, function(d, i) {
+                    return d['Country']
+                })
+
+            texts
+                .enter()
+                .append('text')
+                .classed('label', true)
+                .text(function(d, i) {
+                    return d['Country'] + ': ' + d['Life'] + ', ' + d['GDP']
+                })
+                .merge(texts)
+                .transition()
+                .attr('x', function(d, i) {
+                    return gdpScale(d['GDP'])
+                })
+                .attr('y', function(d, i) {
+                    return lifeScale(d['Life'])
+                })
+                .transition()
+
+            texts
+                .exit()
+                .transition()
+                .style('fill', 'rgba(0,0,0,0)')
+                .on('end', function() {
+                    d3.select(this).remove()
+                })
+
+        }
+
+        d3.json('data.json', function(myData) {
+            var yearIndex = 0
+            d3.interval(function() {
+                updateChart(myData[yearIndex])
+                yearIndex = (yearIndex + 1) % myData.length
+                    // console.log(myData.length)
+                    // console.log(yearIndex)
+            }, 1000)
+
+
+
+
+        })
+
+        var gdpAxis = d3.axisBottom(gdpScale)
+            //排版好看点
+        svg
+            .append('g')
+            .classed('xaxis', true)
+            .attr('transform', 'translate(0, 180)')
+            .call(gdpAxis)
+        svg
+            .selectAll('.xaxis text')
+            .attr('transform', 'rotate(45)')
+            .attr('x', 22)
+            .attr('y', 6)
+            .attr('dy', '.35em')
+
+        // var xAxis1 = = d3.axisBottom(gdpScale)
+        //     .tickValues([0, 60000, 120000, 180000, 240000])
+
+
+
+        var lifeAxis = d3.axisLeft(lifeScale)
+        svg
+            .append('g')
+            .attr('transform', 'translate(20, 0)')
+            .call(lifeAxis)
+
+
+        // updateChart(data[0])
+        // setTimeout(function() {
+        //     updateChart(data[1])
+        // }, 3000)
+
+        // .attr('fill', function(d, i) {
+        //     return d['Continent']
+        // })
+    </script>
+
+
+
+</body>
+
+</html>
