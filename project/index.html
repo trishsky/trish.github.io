@@ -55,14 +55,14 @@
         #content1 {
             max-width: 100%;
             color: dimgray;
-            width: 52%;
+            width: 55%;
             height: 100%;
             position: relative;
             background-color: #fff;
             font-size: 5.5pt;
             text-align: left;
             padding: 60px 40px 40px 30px;
-            margin-left: 60px;
+            margin-left: 5%;
             text-align: justify;
             text-justify: inter-word;
             line-height: 400%;
@@ -72,14 +72,14 @@
         #content2 {
             max-width: 100%;
             color: dimgray;
-            width: 52%;
+            width: 55%;
             height: 100%;
             position: relative;
             background-color: #fff;
             font-size: 5.5pt;
             text-align: left;
             padding: 60px 40px 40px 30px;
-            margin-left: 60px;
+            margin-left: 5%;
             text-align: justify;
             text-justify: inter-word;
             line-height: 400%;
@@ -303,6 +303,11 @@
             /* font-size: 16px; */
             /* margin: 4px 2px; */
             cursor: pointer;
+        }
+        
+        a {
+            color: white;
+            text-decoration: underline;
         }
     </style>
 
@@ -531,7 +536,7 @@
                     <img src="images/logo.png"></p><br>
                 <p>“刷番”（看剧）时，你看到弹幕（注：网络视频播放器上的实时评论功能）里有人剧透会很生气。不过，也有些时候，你需要弹幕“护体”，因为视频剧情太渗人了……</p>
                 <br>
-                <p>那你是否也会留意到，弹幕中那些经常出现的骂战与歧视？</p><br>
+                <p>但你是否也会留意到，弹幕里那些经常出现的骂战与歧视？</p><br>
                 <h3>弹幕从哪飞来？</h3>
                 <br>
 
@@ -554,11 +559,11 @@
                 </h3>
                 <br>
                 <p>在中国，首个引入弹幕功能的视频平台是AcFun弹幕视频网，后来出现的有风格相近的哔哩哔哩弹幕视频网（下称“B站”）。最初，弹幕多见在国内的ACG影视网站中，后来普及到各大综合视频网站中，应用场景从副文化扩大至主流文化。而以往针对国内弹幕的研究，多因B站的用户活跃程度较高，而将B站作为研究对象。本报道也会以B站作为弹幕文本的来源。</p><br>
-                <p>在B站列举的禁止“比较”的对象范围中，记者选定了民族（汉语中的民族，包含民族和族群等概念，在本报道中，可以理解为族群）、地域、种族 和身份四个类别，并基于过往媒体报道、研究报告，以及经验判断，分别选出了新疆地区少数民族、河南人、黑人和同性恋者四个群体。记者在B站的搜索栏中，输入相关关键词（请见附表），获得主题有关于上述四类人群的视频列表；再下载各列表中综合排名前100段视频的所有弹幕（主题有关河南人的视频较少，故只采用了50段视频的弹幕），并加以分析。
+                <p>在B站列举的禁止“比较”的对象范围中，记者选定了民族（汉语中的民族，包含民族和族群等概念，在本报道中，可以理解为族群）、地域、种族 和身份四个类别，并基于过往媒体报道、研究报告，以及经验判断，分别选出了新疆地区少数民族、河南人、黑人和同性恋者四个群体。记者在B站的搜索栏中，输入相关关键词（请见附表），获得主题有关于上述四类人群的视频列表；再抓取各列表中，综合排名前100段视频的所有弹幕（主题有关河南人的视频较少，故只采用了50段视频的弹幕），并加以分析。
                 </p><br>
                 <h3>弹幕中蕴含的情感
                 </h3><br>
-                <p>记者首先对弹幕作出文本情感分析：在每一类视频中，随机抽取100句弹幕，以中文文本分析脚本SnowNLP，计算出每一句弹幕的情感值（数值由0至1，数值越大表示语句用词越正面），再取平均值。
+                <p>记者首先对弹幕作出文本情感分析：在每一类视频中，随机抽取100句弹幕，以中文自然语言处理脚本SnowNLP，计算出每一句弹幕的情感值（数值由0至1，数值越大表示语句用词越正面），再取平均值。
                 </p><br>
                 <p>结果显示，四类视频中，弹幕情感平均值最高的是有关同性恋者的视频，情感平均值为0.5037。值得一提的是，B站内容以日本动漫文化为主流，以同性之间的爱情为创作题材的“BL向”和“百合向”作品，是当中的一大类目。这或许是影响弹幕情感值高低的原因之一。
                 </p><br>
@@ -1080,7 +1085,7 @@
             <p>文本分词提供另一个分析角度。利用悦图线上分词工具，得出每一类视频的弹幕关键词（按权重计算首50个词），并绘制成气泡图。气泡大小代表关键词权重，颜色代表词的倾向。这个初步的统计结果显示，在有关新疆地区少数民族的视频里，前十个弹幕关键词中，正面及负面的用词占比较多；主题关于河南人的视频中，弹幕关键词以中性用词为主；关于黑人的视频里，前十个弹幕关键词中，正面和中性用词各占大约一半；而在有关同性恋者的视频里，前十弹幕关键词中，中性用词占就比较多。
 
             </p> -->
-            <p>（注：报道已对脏话做屏蔽处理）</p>
+            <p>（注：已屏蔽弹幕中的脏话）</p>
 
         </div>
 
@@ -1097,7 +1102,7 @@
                 <h2>隐喻？歧视？请你帮忙识别这些弹幕：</h2>
                 <br>
                 <!-- <p>Content is a priority.Even if it is so large :)</p> -->
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWTG5gvxdDOIBUOloD9Ra3iWZTme7aiMxiBvwb7rFEz2SpJA/viewform?embedded=true" width="400" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWTG5gvxdDOIBUOloD9Ra3iWZTme7aiMxiBvwb7rFEz2SpJA/viewform?embedded=true" width="200" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                 <!-- <div id="form">
                     <form>
                         <label>First Name</label>
@@ -1113,8 +1118,13 @@
                     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
                     <script src="google-form.js"></script>
                 </div> -->
-                <br><br><br><br><br>
-                <p>记者、开发工程师：陈嘉慧；封面设计：韩昕朔</p>
+                <br><br>
+                <p>记者、开发工程师：陈嘉慧</p>
+                <p>封面设计：韩昕朔</p>
+                <p>（谢谢佳昕、Spe的鼓励哦）</p>
+                <br>
+                <a href="note.html">方法论与附录</a>
+
             </div>
         </div>
     </div>
