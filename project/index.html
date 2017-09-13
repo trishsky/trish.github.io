@@ -546,7 +546,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="data/all_data.js"></script> -->
 
-    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="js/d3-scale-chromatic.v1.min.js"></script>
     <script>
         var yellow = d3.interpolateYlGn(0), // "rgb(255, 255, 229)"
             yellowGreen = d3.interpolateYlGn(0.5), // "rgb(120, 197, 120)"
@@ -587,7 +587,7 @@
                 <div class="foo">
                     <h2>
                         <br><br>
-                        <span class="tt"><img src="images/title.png"></span>
+                        <span class="tt"><img src="images/title3.png"></span>
                     </h2>
                     <!-- <img src="https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/iphone2.png" alt="iphone" id="iphone-two" /> -->
 
@@ -1570,14 +1570,12 @@
 
                 <h3>🤦🏽‍&nbsp;弹幕的情感🤦🏽‍&nbsp;</h3>
                 <br>
-                <p>记者对弹幕作出文本情感分析：在每一类视频中，随机抽取100句弹幕，以中文自然语言处理脚本SnowNLP，计算出每一句弹幕的情感值（数值由0至1，数值越大，内容越正面），再取平均值。
+                <p>记者对弹幕作出文本情感分析：在每一类视频的弹幕，以中文自然语言处理脚本BosonNLP，计算出每一句弹幕的情感值（数值由0至1，数值越大，内容越正面），再取平均值。
                 </p><br>
-                <p>结果显示（见下图），五类视频中，弹幕情感平均值最高的是主题关于女性的视频，其次是有关同性恋者的视频，情感平均值分别为0.5332和0.5037。值得一提的是，B站内容以日本动漫文化为主，以同性之间的爱情为创作题材的“BL向”和“百合向”作品，是当中的一大类目。这或许是影响弹幕情感值高低的原因之一。
-                </p><br>
-                <p>然而，由于SnowNLP目前的训练数据主要来自电商平台上的购物评价，因此对其他文本的分析或未如理想。所以，结果仅供比较仅供参考。
+                <p>结果显示（见下图），五类视频中，弹幕情感平均值最高的是主题关于河南的视频，其次是有女性的视频，情感平均值分别为0.4651和0.4597。（注：本次分析采用了BosonNLP的微博模型，较为切合弹幕文本的评论属性。）
                 </p>
 
-                <div class="img_center"><img src="images/graph02.png"></div>
+                <div class="img_center"><img src="images/graph03.png"></div>
             </div>
 
 
