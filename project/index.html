@@ -65,8 +65,7 @@
         .btngp {
             width: auto;
         }
-        
-        .green {
+        /* .green {
             width: 10px;
             height: 10px;
             background-color: rgb(141, 211, 199);
@@ -82,6 +81,24 @@
             width: 10px;
             height: 10px;
             background-color: rgb(255, 255, 179);
+        } */
+        
+        .green {
+            width: 10px;
+            height: 10px;
+            background-color: pink;
+        }
+        
+        .purple {
+            width: 10px;
+            height: 10px;
+            background-color: rgb(190, 186, 218);
+        }
+        
+        .yellow {
+            width: 10px;
+            height: 10px;
+            background-color: whitesmoke);
         }
         
         #content1 {
@@ -448,6 +465,16 @@
             opacity: 0.6;
             /* background: red; */
         }
+        
+        #animate5 {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            font-size: 12px;
+            color: whitesmoke;
+            opacity: 0.6;
+            /* background: red; */
+        }
         /* #chart1 {
             height: 90%;
             width: 90%;
@@ -495,8 +522,7 @@
             background-color: whitesmoke;
             padding: 2%;
         }
-        
-        .pst {
+        /* .pst {
             background-color: rgb(141, 211, 199);
         }
         
@@ -506,6 +532,20 @@
         
         .neu {
             background-color: rgb(255, 255, 179);
+        }
+         */
+        
+        .pst {
+            background-color: pink;
+        }
+        
+        .ngt {
+            background-color: rgb(190, 186, 218);
+        }
+        
+        .neu {
+            background-color: #BDBDBD;
+            color: black;
         }
         
         .pageturn p {
@@ -598,9 +638,10 @@
                     <div id="btngp">
                         <br>
                         <p><span class="inst">在B站上，关于这些群体的视频，会有以下弹幕（点！）：</span></p>
-                        <button onclick="myMove1(); this.disabled='true'" class="button">新疆少数民族</button>
-                        <button onclick="myMove2(); this.disabled='true'" class="button">河南</button>
-                        <button onclick="myMove3(); this.disabled='true'" class="button">黑人</button>
+                        <button onclick="myMove1(); " class="button">新疆少数民族</button>
+                        <button onclick="myMove2(); " class="button">河南</button>
+                        <button onclick="myMove3(); " class="button">黑人</button>
+                        <button onclick="myMove5(); " class="button">女性</button>
                         <button onclick="myMove4(); this.disabled='true'" class="button">同性恋者</button>
                         </p>
                     </div>
@@ -657,6 +698,24 @@
                             <p>4分28暂停的那个，我信了你的邪，我还真的暂停了</p>
                             <p>他这个是说明.有比同性恋的更容易让人类灭绝的.怎么直男癌们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不去关心.</p>
                             <p>即使他洗白我也讨厌他，滚!</p>
+                            <!-- <p>同性恋不是病!有病的是你们这一大帮恐同症!无知的人们!並不吧...女同也有很多人歧視的...</p>
+                            <p>承包我戳❤????合着这题目的意思就是同性恋不正常?这是传说中的无性恋么?</p>
+                            <p>我這是怎麼了...雖然有點尷尬 但莫名的覺得親的蠻可愛的(?</p>
+                            <p>同性恋怎么影响家庭安定啦?</p> -->
+
+
+
+                        </div>
+
+
+                        <div id="animate5">
+
+                            <p>弹幕里过多色情猥琐的内容，实在不建议显示</p>
+                            <!-- <p>要是我妈看了，肯定会说，你怎么给我看这种东西.我家挺封建.</p>
+                            <p>可惜了我和我姬友搞一起了????就许你瞎我眼睛，就不许我歧视回去?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p>4分28暂停的那个，我信了你的邪，我还真的暂停了</p>
+                            <p>他这个是说明.有比同性恋的更容易让人类灭绝的.怎么直男癌们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不去关心.</p>
+                            <p>即使他洗白我也讨厌他，滚!</p> -->
                             <!-- <p>同性恋不是病!有病的是你们这一大帮恐同症!无知的人们!並不吧...女同也有很多人歧視的...</p>
                             <p>承包我戳❤????合着这题目的意思就是同性恋不正常?这是传说中的无性恋么?</p>
                             <p>我這是怎麼了...雖然有點尷尬 但莫名的覺得親的蠻可愛的(?</p>
@@ -726,6 +785,22 @@
 
                         function myMove4() {
                             var elem = document.getElementById("animate4");
+                            var pos = 0;
+                            var id = setInterval(frame, 8);
+
+                            function frame() {
+                                if (pos == 1500) {
+                                    clearInterval(id);
+                                } else {
+                                    pos++;
+                                    // elem.style.top = pos + 'px';
+                                    elem.style.right = pos + 'px';
+                                }
+                            }
+                        }
+
+                        function myMove5() {
+                            var elem = document.getElementById("animate5");
                             var pos = 0;
                             var id = setInterval(frame, 8);
 
@@ -853,7 +928,7 @@
                     .rangeRound([8, width]); // .rangeRound([height, 0]);
 
                 var z = d3.scaleOrdinal()
-                    .range(["rgb(141, 211, 199)", "rgb(255, 255, 179)", "rgb(190, 186, 218)", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+                    .range(["pink", "#A4A4A4", "rgb(190, 186, 218)", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
                 d3.csv("data.csv", function(d, i, columns) {
                     for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
@@ -906,7 +981,7 @@
                     g.append("g")
                         .attr("class", "axis")
                         .attr("transform", "translate(0," + height + ")") // New line
-                        .call(d3.axisBottom(x).ticks(null, "s")) //  .call(d3.axisLeft(y).ticks(null, "s"))
+                        .call(d3.axisBottom(x).ticks(5, "s")) //  .call(d3.axisLeft(y).ticks(null, "s"))
                         .append("text")
                         .attr("y", 2) //     .attr("y", 2)
                         .attr("x", x(x.ticks().pop()) + 12) //     .attr("y", y(y.ticks().pop()) + 0.5)
@@ -1000,7 +1075,7 @@
                     format = d3.format(",d"),
                     color = d3.scaleOrdinal(d3.schemeSet3)
                     .domain(["New York", "San Francisco", "Austin"])
-                    .range(["rgb(141, 211, 199)", "rgb(190, 186, 218)", "rgb(255, 255, 179)", ]);
+                    .range(["pink", "rgb(190, 186, 218)", "#BDBDBD", ]);
 
                 var bubble = d3.pack()
                     .size([diameter, diameter])
@@ -1111,7 +1186,8 @@
                         var diameter = 380,
                             format = d3.format(",d"),
                             color = d3.scaleOrdinal(d3.schemeSet3)
-                            .range(["rgb(255, 255, 179)", "rgb(190, 186, 218)", "rgb(141, 211, 199)", ]);
+                            .range(["#BDBDBD", "rgb(190, 186, 218)", "pink", ]);
+                        // .range(["rgb(255, 255, 179)", "rgb(190, 186, 218)", "rgb(141, 211, 199)", ]);
 
                         var bubble = d3.pack()
                             .size([diameter, diameter])
@@ -1226,7 +1302,7 @@
                             format = d3.format(",d"),
                             color = d3.scaleOrdinal(d3.schemeSet3)
                             .domain(["New York", "San Francisco", "Austin"])
-                            .range(["rgb(255, 255, 179)", "rgb(141, 211, 199)", "rgb(190, 186, 218)", ]);
+                            .range(["#BDBDBD", "pink", "rgb(190, 186, 218)", ]);
 
                         var bubble = d3.pack()
                             .size([diameter, diameter])
@@ -1339,7 +1415,7 @@
                         var diameter = 380,
                             format = d3.format(",d"),
                             color = d3.scaleOrdinal(d3.schemeSet3)
-                            .range(["rgb(255, 255, 179)", "rgb(141, 211, 199)", "rgb(190, 186, 218)", ]);
+                            .range(["#BDBDBD", "pink", "rgb(190, 186, 218)", ]);
 
                         var bubble = d3.pack()
                             .size([diameter, diameter])
@@ -1460,7 +1536,7 @@
                         var diameter = 380,
                             format = d3.format(",d"),
                             color = d3.scaleOrdinal(d3.schemeSet3)
-                            .range(["rgb(255, 255, 179)", "rgb(141, 211, 199)", "rgb(190, 186, 218)", ]);
+                            .range(["#BDBDBD", "pink", "rgb(190, 186, 218)", ]);
 
                         var bubble = d3.pack()
                             .size([diameter, diameter])
@@ -1572,7 +1648,7 @@
                 <br>
                 <p>记者对弹幕作出文本情感分析：在每一类视频的弹幕，以中文自然语言处理脚本BosonNLP，计算出每一句弹幕的情感值（数值由0至1，数值越大，内容越正面），再取平均值。
                 </p><br>
-                <p>结果显示（见下图），五类视频中，弹幕情感平均值最高的是主题关于河南的视频，其次是有女性的视频，情感平均值分别为0.4651和0.4597。（注：本次分析采用了BosonNLP的微博模型，较为切合弹幕文本的评论属性。）
+                <p>结果显示（见下图），五类视频中，弹幕情感平均值最高的是主题关于河南的视频，其次是有女性的视频，情感平均值分别为0.4651和0.4597。有趣的是，（注：本次分析采用了BosonNLP的微博模型，较为切合弹幕文本的评论属性。）
                 </p>
 
                 <div class="img_center"><img src="images/graph03.png"></div>
