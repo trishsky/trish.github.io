@@ -638,13 +638,25 @@
                     <div id="btngp">
                         <br>
                         <p><span class="inst">在B站上，关于这些群体的视频，会有以下弹幕（点！）：</span></p>
-                        <button onclick="myMove1(); " class="button">新疆少数民族</button>
-                        <button onclick="myMove2(); " class="button">河南</button>
-                        <button onclick="myMove3(); " class="button">黑人</button>
-                        <button onclick="myMove5(); " class="button">女性</button>
-                        <button onclick="myMove4(); this.disabled='true'" class="button">同性恋者</button>
+                        <button onclick="myMove1(); this.disabled='true'" class="btton">新疆少数民族</button>
+                        <button onclick="myMove2(); this.disabled='true'" class="btton">河南</button>
+                        <button onclick="myMove3(); this.disabled='true'" class="btton">黑人</button>
+                        <button onclick="myMove5(); this.disabled='true'" class="btton">女性</button>
+                        <button onclick="myMove4(); this.disabled='true'" class="btton">同性恋者</button>
                         </p>
                     </div>
+
+                    <!-- <div id="btngp">
+                        <br>
+                        <p><span class="inst">在B站上，关于这些群体的视频，会有以下弹幕（点！）：</span></p>
+                        <button onclick="myMove1()" class="btton">新疆少数民族</button>
+                        <button onclick="myMove2()" class="btton">河南</button>
+                        <button onclick="myMove3()" class="btton">黑人</button>
+                        <button onclick="myMove5()" class="btton">女性</button>
+                        <button onclick="myMove4()" class="btton">同性恋者</button>
+                        </p>
+                    </div> -->
+
                     <div id="container">
                         <div id="animate1">
 
@@ -710,7 +722,9 @@
 
                         <div id="animate5">
 
-                            <p>弹幕里过多色情猥琐的内容，实在不建议显示</p>
+                            <p>有些腐女戏真多，啥也不说了，同妻是你的路慢走不送</p>
+                            <p>魂淡，你们要淡定啊</p>
+                            <p>字幕君快出来&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真琴小天使？!</p>
                             <!-- <p>要是我妈看了，肯定会说，你怎么给我看这种东西.我家挺封建.</p>
                             <p>可惜了我和我姬友搞一起了????就许你瞎我眼睛，就不许我歧视回去?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                             <p>4分28暂停的那个，我信了你的邪，我还真的暂停了</p>
@@ -733,6 +747,16 @@
                             var id = setInterval(frame, 8);
                             var btn = document.getElementById("elem");
 
+                            // var fewSeconds = 2;
+                            // $('#b01').click(function() {
+                            //     // Ajax request
+                            //     var btn = $(this);
+                            //     btn.prop('disabled', true);
+                            //     setTimeout(function() {
+                            //         btn.prop('disabled', false);
+                            //     }, fewSeconds * 1000);
+                            // });
+
 
                             function frame() {
                                 if (pos == 1500) {
@@ -743,10 +767,12 @@
                                     elem.style.right = pos + 'px';
                                 }
                             }
-                            setTimeout(function() {
-                                btn.value = oldValue;
-                                btn.removeAttribute('disabled');
-                            }, 3000)
+                            // setTimeout(function() {
+                            //     btn.value = oldValue;
+                            //     btn.removeAttribute('disabled');
+                            // }, 2000)
+
+
                         }
 
 
