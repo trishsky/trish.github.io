@@ -1,0 +1,1874 @@
+<!-- Theme by Alvaro Trigo Lopez -->
+<!-- Reporting Project by Trish Chan -->
+<!-- Cover Image by Han Sinshuo -->
+<!-- Special thanks to Liu Jiaxin Wei Chunyuan and Spe Chen -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>弹幕里的那些暖意与硝烟</title>
+    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="examples.css" />
+
+    <style>
+        h2 {
+            font-size: 20px;
+            font-family: arial, helvetica;
+            color: white;
+            margin: 0;
+            padding: 20px 0 0 0;
+        }
+        
+        h1 {
+            font-size: 1.5em;
+            font-family: arial, helvetica;
+            color: black;
+            margin: 0;
+            padding: 20px 0 0 0;
+        }
+        
+        .intro01 p {
+            background-color: white;
+        }
+        
+        .intro p {
+            /* background-color: white; */
+            padding: 1% 1% 1% 1%;
+            font-size: 14px;
+            position: left;
+            /* color: grey; */
+            padding: 10px 0 0 0;
+            line-height: 150%;
+        }
+        
+        #container p {
+            font-size: 14px;
+            position: left;
+            color: black;
+            padding: 10px 0 0 0;
+            line-height: 150%;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        svg {
+            height: 60%;
+            /* width: 40%; */
+            position: relative;
+        }
+        
+        .btngp {
+            width: auto;
+        }
+        /* .green {
+            width: 10px;
+            height: 10px;
+            background-color: rgb(141, 211, 199);
+        }
+        
+        .purple {
+            width: 10px;
+            height: 10px;
+            background-color: rgb(190, 186, 218);
+        }
+        
+        .yellow {
+            width: 10px;
+            height: 10px;
+            background-color: rgb(255, 255, 179);
+        } */
+        
+        .green {
+            width: 10px;
+            height: 10px;
+            background-color: pink;
+        }
+        
+        .purple {
+            width: 10px;
+            height: 10px;
+            background-color: rgb(190, 186, 218);
+        }
+        
+        .yellow {
+            width: 10px;
+            height: 10px;
+            background-color: whitesmoke;
+        }
+        
+        #content1 {
+            max-width: 100%;
+            /* color: dimgray; */
+            width: 80%;
+            height: 100%;
+            position: relative;
+            background-color: #fff;
+            font-size: 5.5pt;
+            text-align: left;
+            padding: 10% 10% 10% 10%;
+            margin: auto;
+            width: 80%;
+            /* margin-left: 5%; */
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 400%;
+            vertical-align: middle;
+            /* font-family: 冬青黑体; */
+        }
+        
+        #content3 {
+            max-width: 100%;
+            /* color: dimgray; */
+            width: 55%;
+            height: 100%;
+            position: relative;
+            background-color: #fff;
+            font-size: 5.5pt;
+            text-align: left;
+            padding: 60px 40px 40px 30px;
+            margin: auto;
+            width: 60%;
+            /* margin-left: 5%; */
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 400%;
+            /* font-family: 冬青黑体; */
+        }
+        
+        #content8 {
+            max-width: 100%;
+            /* color: dimgray; */
+            width: 55%;
+            height: 100%;
+            position: relative;
+            background-color: #fff;
+            font-size: 5.5pt;
+            text-align: left;
+            padding: 60px 40px 40px 30px;
+            margin: auto;
+            width: 60%;
+            /* margin-left: 5%; */
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 400%;
+            /* font-family: 冬青黑体; */
+        }
+        
+        #content5 {
+            max-width: 100%;
+            /* color: dimgray; */
+            width: 55%;
+            height: 100%;
+            position: relative;
+            background-color: #fff;
+            font-size: 5.5pt;
+            text-align: left;
+            padding: 60px 40px 40px 30px;
+            margin: auto;
+            width: 60%;
+            /* margin-left: 5%; */
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 400%;
+            /* font-family: 冬青黑体; */
+        }
+        
+        #content4 {
+            max-width: 100%;
+            /* color: dimgray; */
+            width: 55%;
+            height: 100%;
+            position: relative;
+            background-color: #fff;
+            font-size: 5.5pt;
+            text-align: left;
+            padding: 60px 40px 40px 30px;
+            margin: auto;
+            width: 60%;
+            /* margin-left: 5%; */
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 400%;
+            /* font-family: 冬青黑体; */
+        }
+        /* #chart6 svg {
+            position: center;
+        } */
+        
+        #content6 {
+            max-width: 100%;
+            /* color: dimgray; */
+            width: 55%;
+            height: 100%;
+            position: relative;
+            background-color: #fff;
+            font-size: 5.5pt;
+            text-align: left;
+            padding: 60px 40px 40px 30px;
+            margin: auto;
+            width: 60%;
+            /* margin-left: 5%; */
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 400%;
+            /* font-family: 冬青黑体; */
+        }
+        
+        #content2 {
+            max-width: 100%;
+            color: dimgray;
+            width: 55%;
+            height: 100%;
+            position: relative;
+            background-color: #fff;
+            font-size: 5.5pt;
+            text-align: left;
+            padding: 60px 40px 40px 30px;
+            margin-left: 5%;
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 400%;
+            /* font-family: 冬青黑体; */
+        }
+        
+        #infograph {
+            background-color: white;
+            width: 380px;
+            height: 340px;
+            position: relative;
+            /* top: 1450px; */
+            /* right: 50px */
+        }
+        
+        #dmk {
+            background-color: white;
+            /* width: 380px; */
+            /* height: 80px; */
+            position: absolute;
+            /* top: 600px; */
+            right: 28%;
+            /* padding: 20px 0 0 0; */
+            font-size: 5.5pt;
+        }
+        
+        #vidind {
+            background-color: white;
+            width: 380px;
+            height: 320px;
+            position: absolute;
+            top: 1800px;
+            right: 50px;
+            padding: 30px 0 0 0;
+            font-size: 5.5pt;
+        }
+        
+        h3 {
+            font-size: 14pt;
+            padding: 15px 0 0 0;
+            /* text-decoration: underline; */
+            /* text-decoration-color: pink; */
+            font-weight: bold;
+        }
+        
+        h4 {
+            text-align: center;
+            font-size: 12pt;
+            color: dimgray;
+            padding: 12px 0 0 0;
+        }
+        
+        #pageturn1 {
+            width: 250px;
+            height: 35px;
+            position: relative;
+            /* background-color: grey; */
+            fill-opacity: 70%;
+            bottom: 10%;
+            left: 40%;
+            font-size: 8pt;
+        }
+        
+        .note {
+            width: 250px;
+            height: 80px;
+            position: relative;
+            left: 60px;
+            bottom: 20px;
+            font-size: 6pt;
+            text-align: left;
+        }
+        
+        .section {
+            text-align: center;
+        }
+        
+        #infoMenu li a {
+            color: #fff;
+        }
+        
+        .img_center {
+            text-align: center;
+        }
+        
+        #section0 {
+            background: white;
+            /* background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+            background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+            background: linear-gradient(#4BBFC3, #7BAABE); */
+        }
+        
+        #section1 {
+            background: white;
+            /* background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+            background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+            background: linear-gradient(#4BBFC3, #7BAABE); */
+        }
+        
+        #section21 {
+            background: white;
+            /* background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+            background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+            background: linear-gradient(#4BBFC3, #7BAABE); */
+        }
+        
+        #section22 {
+            background: white;
+            /* background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+            background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+            background: linear-gradient(#4BBFC3, #7BAABE); */
+        }
+        
+        .foo {
+            background-image: url("images/bg.jpg");
+            /* width: 100%;
+            height: auto; */
+            background-size: 100%
+        }
+        
+        #form {
+            width: 500px;
+            height: 200px;
+        }
+        
+        #section2 {
+            background: white;
+            /* background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
+            background: -webkit-linear-gradient(#969AC6, #636F8F);
+            background: linear-gradient(#969AC6, #636F8F); */
+        }
+        
+        #section6 {
+            background: white;
+            /* background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
+            background: -webkit-linear-gradient(#969AC6, #636F8F);
+            background: linear-gradient(#969AC6, #636F8F); */
+        }
+        
+        #slide1 {
+            background: whitesmoke
+            /* background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#969ac6));
+            background: -webkit-linear-gradient(#7BAABE, #969AC6);
+            background: linear-gradient(#7BAABE, #969AC6); */
+        }
+        
+        #slide2 {
+            background: whitesmoke
+            /* background: -webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
+            background: -webkit-linear-gradient(#92a1ca, #76c2bd);
+            background: linear-gradient(#92a1ca, #76c2bd); */
+        }
+        
+        #slide3 {
+            background: whitesmoke
+            /* background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#969ac6));
+            background: -webkit-linear-gradient(#7BAABE, #969AC6);
+            background: linear-gradient(#7BAABE, #969AC6); */
+        }
+        
+        #slide4 {
+            background: whitesmoke
+            /* background: -webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
+            background: -webkit-linear-gradient(#92a1ca, #76c2bd);
+            background: linear-gradient(#92a1ca, #76c2bd); */
+        }
+        
+        #slide5 {
+            background: whitesmoke
+            /* background: -webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
+            background: -webkit-linear-gradient(#92a1ca, #76c2bd);
+            background: linear-gradient(#92a1ca, #76c2bd); */
+        }
+        
+        path {
+            stroke: red;
+            stroke-width: 5;
+            fill: yes;
+        }
+        
+        #container {
+            width: 300px;
+            height: 300px;
+            left: 80%;
+            /* padding: 300px; */
+            position: relative;
+            /* position: center; */
+            /* position: static; */
+            /* position: -900px */
+            /* border: 1px solid red; */
+            /* background: black; */
+        }
+        
+        #animate1 {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            font-size: 12px;
+            /* position: -1200px; */
+            color: whitesmoke;
+            opacity: 0.6;
+            /* display: none; */
+            /* background: red; */
+        }
+        
+        #animate2 {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            font-size: 12px;
+            color: whitesmoke;
+            opacity: 0.6;
+            /* background: red; */
+        }
+        
+        #animate3 {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            font-size: 12px;
+            color: whitesmoke;
+            opacity: 0.6;
+            /* background: red; */
+        }
+        
+        #animate4 {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            font-size: 12px;
+            color: whitesmoke;
+            opacity: 0.6;
+            /* background: red; */
+        }
+        
+        #animate5 {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            font-size: 12px;
+            color: whitesmoke;
+            opacity: 0.6;
+            /* background: red; */
+        }
+        /* #chart1 {
+            height: 90%;
+            width: 90%;
+        } */
+        
+        .button {
+            background-color: whitesmoke;
+            border: none;
+            color: black;
+            /* padding: 15px 32px; */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            /* font-size: 16px; */
+            /* margin: 4px 2px; */
+            cursor: pointer;
+        }
+        
+        a {
+            text-decoration: underline;
+        }
+        
+        #indenttext {
+            width: 60%;
+            margin: auto;
+            font-size: 1.2em;
+            background-color: whitesmoke;
+            padding: 20px;
+            top: 50%;
+        }
+        
+        .udl {
+            background-color: pink;
+        }
+        
+        .quote {
+            background-color: whitesmoke;
+            padding: 2% 2% 2% 2%;
+            font-size: 1.8em;
+            margin: 2% 2% 2% 2%;
+        }
+        
+        ul {
+            font-size: 2em;
+            background-color: whitesmoke;
+            padding: 2%;
+        }
+        /* .pst {
+            background-color: rgb(141, 211, 199);
+        }
+        
+        .ngt {
+            background-color: rgb(190, 186, 218);
+        }
+        
+        .neu {
+            background-color: rgb(255, 255, 179);
+        }
+         */
+        
+        .pst {
+            background-color: pink;
+        }
+        
+        .ngt {
+            background-color: rgb(190, 186, 218);
+        }
+        
+        .neu {
+            background-color: #BDBDBD;
+            color: black;
+        }
+        
+        .pageturn p {
+            width: 250px;
+            height: 35px;
+            position: relative;
+            /* background-color: grey; */
+            fill-opacity: 70%;
+            bottom: 10%;
+            left: 40%;
+            font-size: 12pt;
+        }
+        
+        .inst {
+            background-color: pink;
+        }
+        
+        .axis .domain {
+            display: none;
+        }
+    </style>
+
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="examples.js"></script>
+
+    <script src="js/d3.v4.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="data/all_data.js"></script> -->
+
+    <script src="js/d3-scale-chromatic.v1.min.js"></script>
+    <script>
+        var yellow = d3.interpolateYlGn(0), // "rgb(255, 255, 229)"
+            yellowGreen = d3.interpolateYlGn(0.5), // "rgb(120, 197, 120)"
+            green = d3.interpolateYlGn(1); // "rgb(0, 69, 41)"
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+                // sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+                scrollOverflow: true
+            });
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+    <!-- <script>
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + '://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'twitter-wjs');
+    </script> -->
+
+    <div id="fullpage">
+
+        <div class="section " id="section0">
+            <div class="intro">
+
+                <div class="foo">
+                    <h2>
+                        <br><br>
+                        <span class="tt"><img src="images/title3.png"></span>
+                    </h2>
+                    <!-- <img src="https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/iphone2.png" alt="iphone" id="iphone-two" /> -->
+
+                    <span class="intro01"><p>如同其他网络空间，视频弹幕区为用户提供了一个交流、表达、抱团取暖的地方，但这里也因其匿名属性而充斥着不文明言论。当你在刷“泡面番”时，有否留意到这一切？（警告：以下为真实弹幕，或包含过激言论和歧视性字眼。）
+                    </p></span>
+
+
+                    <div id="btngp">
+                        <br>
+                        <p><span class="inst">在B站上，关于这些群体的视频，会有以下弹幕（点！）：</span></p>
+                        <button onclick="myMove1(); this.disabled='true'" class="button">新疆少数民族</button>
+                        <button onclick="myMove2(); this.disabled='true'" class="button">河南</button>
+                        <button onclick="myMove3(); this.disabled='true'" class="button">黑人</button>
+                        <button onclick="myMove5(); this.disabled='true'" class="button">女性</button>
+                        <button onclick="myMove4(); this.disabled='true'" class="button">同性恋者</button>
+                        </p>
+                    </div>
+
+                    <div id="btngp">
+                        <!-- <br>
+                        <p><span class="inst">在B站上，关于这些群体的视频，会有以下弹幕（点！）：</span></p>
+                        <button onclick="myMove1()" class="btton">新疆少数民族</button>
+                        <button onclick="myMove2()" class="btton">河南</button>
+                        <button onclick="myMove3()" class="btton">黑人</button>
+                        <button onclick="myMove5()" class="btton">女性</button>
+                        <button onclick="myMove4()" class="btton">同性恋者</button>
+                        </p>
+                    </div> -->
+
+                        <div id="container">
+                            <div id="animate1">
+
+                                <span class="dmk1"><p>总有一群沙比 自己不敢管就以为没有人管 你以为人人都是你这种玩意? </p></span>
+                                <p>老板 来个过油肉拌面!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p>有些人的种族歧视真可怕..... 有有有! 前100? 烧烤我喜欢，串串??????? ..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 穆斯林不要勾搭非穆斯林,ok?
+                                </p>
+                                <p>王胡子王震来了! 那个像是竹子做的房子是什么呀? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;穆斯林恐怖组织~~确实给美国炸的怀疑人生了!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;辣的!
+                                    似乎在听地理课???? 带个头巾说反压迫吗? 哇!
+                                    <!--</p> 
+                            <p>此时此地,你愿意谴责哈马斯吗?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;炸油漆.. 我的妈... 计数菌施工中?</p>
+
+                            <p>臥草!!!!!!! 不许骂人!!! 手法很好的人？是什么意思????
+                            </p> -->
+
+                                    <!-- <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他的眼睛好看! </p>
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;能量太多了…</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;顶时候.. 法国那么大? 带个头巾说反压迫吗?</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新疆省? 不就蒜吃么...</p> -->
+                            </div>
+                            <div id="animate2">
+
+                                <p>那你们没想过up这样做是不是有问题......&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;驻马店不是很多杀马特...只是这里年轻人喜欢骑公赛...</p>
+                                <p>最爱胡辣汤配油条!再加上水煎包 简直完美!</p>
+                                <p>我爱吃面 ???? &nbsp;&nbsp;都是中国人都要团结 不要黑自己人的呀..</p>
+                                <p>不要再黑河南了????</p>
+                                <p>广西人路过........&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;前面黄字，现在还揪着偷井盖不放?</p>
+                                <!-- <p>伪装者bgm!!!魔性....地震了!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p>我认真道歉声音也很小啊，bb什么?_?&nbsp;北京人表示这个不会加... 专门给儿童看的. 好乱......&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </p>
+                            <p>有暖气舒服啥 11月温度还行就开 热的要命 3月冷的要命就关了????????已经对不起了，各位就不要说了!</p> -->
+                            </div>
+                            <div id="animate3">
+
+                                <p>A路人!A路人!我说东北你说.........&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;海天酱油????
+                                </p>
+                                <p>汉密尔顿......</p>
+                                <p>说开心宝贝的，你放学别走!&nbsp;&nbsp;&nbsp;&nbsp;笑的那个，不是先跳再投?难不成先投再跳?抢板么?</p>
+                                <p>皮几万!!!!!!!!五八!五八!五八!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是马里奥bgm?0.0.0...00.0........</p>
+                                <!-- <p>作死啊???? 感觉变成亮黑色了，哈哈.....make Russia great again!</p>
+                            <p>娘娘腔???????????? 听不懂..bgm..说薛之谦才是翻唱的尊重人行不行 制杖么是?</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国女权已经...</p>
+                            <p>法语的不错，中文的差一点，但是英语的果断好听.......</p> -->
+
+                            </div>
+                            <div id="animate4">
+
+                                <p>然而更多的是我爱她（他），她（他）却是个异性恋......</p>
+                                <p>要是我妈看了，肯定会说，你怎么给我看这种东西.我家挺封建.</p>
+                                <p>可惜了我和我姬友搞一起了????就许你瞎我眼睛，就不许我歧视回去?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p>4分28暂停的那个，我信了你的邪，我还真的暂停了</p>
+                                <p>他这个是说明.有比同性恋的更容易让人类灭绝的.怎么直男癌们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不去关心.</p>
+                                <p>即使他洗白我也讨厌他，滚!</p>
+                                <!-- <p>同性恋不是病!有病的是你们这一大帮恐同症!无知的人们!並不吧...女同也有很多人歧視的...</p>
+                            <p>承包我戳❤????合着这题目的意思就是同性恋不正常?这是传说中的无性恋么?</p>
+                            <p>我這是怎麼了...雖然有點尷尬 但莫名的覺得親的蠻可愛的(?</p>
+                            <p>同性恋怎么影响家庭安定啦?</p> -->
+
+
+
+                            </div>
+
+
+                            <div id="animate5">
+
+                                <p>有些腐女戏真多，啥也不说了，同妻是你的路慢走不送</p>
+                                <p>魂淡，你们要淡定啊</p>
+                                <p>字幕君快出来&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真琴小天使？!</p>
+                                <!-- <p>要是我妈看了，肯定会说，你怎么给我看这种东西.我家挺封建.</p>
+                            <p>可惜了我和我姬友搞一起了????就许你瞎我眼睛，就不许我歧视回去?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p>4分28暂停的那个，我信了你的邪，我还真的暂停了</p>
+                            <p>他这个是说明.有比同性恋的更容易让人类灭绝的.怎么直男癌们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不去关心.</p>
+                            <p>即使他洗白我也讨厌他，滚!</p> -->
+                                <!-- <p>同性恋不是病!有病的是你们这一大帮恐同症!无知的人们!並不吧...女同也有很多人歧視的...</p>
+                            <p>承包我戳❤????合着这题目的意思就是同性恋不正常?这是传说中的无性恋么?</p>
+                            <p>我這是怎麼了...雖然有點尷尬 但莫名的覺得親的蠻可愛的(?</p>
+                            <p>同性恋怎么影响家庭安定啦?</p> -->
+
+
+
+                            </div>
+
+                        </div>
+                        <script>
+                            function myMove1() {
+                                var elem = document.getElementById("animate1");
+                                var pos = 0;
+                                var id = setInterval(frame, 8);
+                                // var btn = document.getElementById("elem");
+
+                                // var fewSeconds = 2;
+                                // $('#b01').click(function() {
+                                //     // Ajax request
+                                //     var btn = $(this);
+                                //     btn.prop('disabled', true);
+                                //     setTimeout(function() {
+                                //         btn.prop('disabled', false);
+                                //     }, fewSeconds * 1000);
+                                // });
+
+
+                                function frame() {
+                                    if (pos == 1500) {
+                                        clearInterval(id);
+                                    } else {
+                                        pos++;
+                                        // elem.style.top = pos + 'px';
+                                        elem.style.right = pos + 'px';
+                                    }
+                                }
+                                // setTimeout(function() {
+                                //     btn.value = oldValue;
+                                //     btn.removeAttribute('disabled');
+                                // }, 2000)
+
+
+                            }
+
+
+
+                            function myMove2() {
+                                var elem = document.getElementById("animate2");
+                                var pos = 0;
+                                var id = setInterval(frame, 8);
+
+                                function frame() {
+                                    if (pos == 1500) {
+                                        clearInterval(id);
+                                    } else {
+                                        pos++;
+                                        // elem.style.top = pos + 'px';
+                                        elem.style.right = pos + 'px';
+                                    }
+                                }
+                            }
+
+                            function myMove3() {
+                                var elem = document.getElementById("animate3");
+                                var pos = 0;
+                                var id = setInterval(frame, 8);
+
+                                function frame() {
+                                    if (pos == 1500) {
+                                        clearInterval(id);
+                                    } else {
+                                        pos++;
+                                        // elem.style.top = pos + 'px';
+                                        elem.style.right = pos + 'px';
+                                    }
+                                }
+                            }
+
+                            function myMove4() {
+                                var elem = document.getElementById("animate4");
+                                var pos = 0;
+                                var id = setInterval(frame, 8);
+
+                                function frame() {
+                                    if (pos == 1500) {
+                                        clearInterval(id);
+                                    } else {
+                                        pos++;
+                                        // elem.style.top = pos + 'px';
+                                        elem.style.right = pos + 'px';
+                                    }
+                                }
+                            }
+
+                            function myMove5() {
+                                var elem = document.getElementById("animate5");
+                                var pos = 0;
+                                var id = setInterval(frame, 8);
+
+                                function frame() {
+                                    if (pos == 1500) {
+                                        clearInterval(id);
+                                    } else {
+                                        pos++;
+                                        // elem.style.top = pos + 'px';
+                                        elem.style.right = pos + 'px';
+                                    }
+                                }
+                            }
+                        </script>
+
+                    </div>
+                    <div id="pageturn1">
+                        <p>看完弹幕，请继续往下滑</p>
+                        <br>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="section" id="section6">
+                <!-- <div id="infograph"><img src="images/graph01.png"></div>
+            <div id="dmk"><br><img src="images/dmk.png"><br><br><br>
+                <p>B站弹幕截图</p>
+            </div> -->
+                <!-- <div id="vidind"><img src="images/indvid.png"></div> -->
+                <div id="content1">
+                    <!-- <p><img src="images/logo.png"></p><br> -->
+                    <div id="indenttext">
+                        <p>“刷番”（看剧）时，你看到弹幕（注：网络视频播放器上的实时评论功能）里有人剧透会很生气。不过，也有些时候，你需要弹幕“护体”，因为视频剧情太渗人了……</p>
+                        <br>
+                        <p>但你是否也会留意到，弹幕里那些经常出现的骂战与歧视？</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="section8">
+                <div id="content3">
+
+
+                    <h3>❗&nbsp;弹幕从哪飞来？&nbsp;❗</h3>
+                    <br>
+
+                    <p>弹幕（Danmaku）一词，起源自日本动漫、游戏（ACG）文化，用以描述画面上密集炮弹攻击的视觉效果。2006年，日本网站Nicovideo.jp推出视频实时评论功能，滚动评论直接遮盖在画面之上。及后，弹幕一词就被借用来指代这样的评论。</p>
+                    <br>
+                    <p>弹幕与一般评论区的不同之处，在于它的<span class="udl">实时性</span>。清华大学学者陈悦（音译）等人指出，弹幕能为互不相识的用户，提供一个“共同观看”的体验——在娱乐的同时，感觉<span class="udl">有人作伴</span>，并且可以<span class="udl">就特定帧数的内容，提问和表达意见。</span></p><br>
+                    <p>在中国，首个引入弹幕功能的视频平台是AcFun弹幕视频网，后来出现的有风格相近的哔哩哔哩弹幕视频网（下称“B站”）。弹幕逐渐普及到各大综合视频网站中，<span class="udl">应用场景从副文化扩大至主流文化。</span>而以往针对国内弹幕的研究，多因B站的用户活跃程度较高，而将B站作为研究对象，本报道亦然。</p><br></p>
+                    <!-- <p>学者杨骏骁提出，用户虽然在不同的时空观影和发弹幕，但弹幕会以视频的“内部时间”依次呈现出来，构成“拟同步”的特征。
+                </p> -->
+                    <!-- <div id="dmk"><img src="images/dmk.png">
+                    <p>B站弹幕截图</p>
+                </div>  -->
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="section" id="section9">
+                <div id="content4">
+
+                    <h3>🤷&nbsp;弹幕礼仪：禁止人身攻击和“比较”&nbsp;🤷
+                    </h3>
+                    <br>
+                    <p>不过，一如其他网络空间，人们在发弹幕的时，比在日常生活中，更容易流露偏见与歧视。在知乎上<a href="https://www.zhihu.com/search?type=content&q=%E5%BC%B9%E5%B9%95%20%E6%AD%A7%E8%A7%86" target="_blank">搜索“弹幕+歧视”</a>，可以得到人们对弹幕中的“地域黑”、仇视女性、歧视同性恋等问题的探讨，可见问题有一定的普遍性。</p>
+                    <br>
+                    <p>香港中文大学学者李立峯曾撰文探讨网络言论上的“不文明话语”。他写道，<span class="udl">人们在网络世界，因说话时看不见“观众”，会感到少了约束。</span>一些持有偏激立场的用户，会更容易对他人人身攻击或发表歧视言论。
+                    </p><br>
+                    <p>针对类似的不良言论，B站的官方弹幕礼仪指引中所列，禁止人身攻击、引战等内容。其中，对于“引战”，B站如此阐释：
+                        <div class="quote">“比较”这种形式往往会带来争吵，我们禁止一切为了贬低或提高一个内容，而引入另一个比较对象的行为。“比较”包括但不限于民族、种族、国家、地域、宗教、性别、年龄、身份、兴趣等。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="section10">
+                <div id="content5">
+                    <h3>📊 &nbsp;视频内容是正面多？还是负面多？&nbsp;📊 </h3>
+                    <br>
+                    <p>在B站列举的范围中，记者选定了民族（在本报道中，可以理解为族群）、地域、种族 和性别四个类别，并基于过往媒体报道、研究报告，以及经验判断，分别选出了新疆地区少数民族、河南人、黑人、女性和同性恋者五个群体。<a href="note.html" target="_blank">详情</a>
+                    </p>
+                    <br>
+                    <p>利用网络爬虫，收集B站上关于以上群体的视频（各100段）的弹幕，发现关于黑人群体的视频中，内容正面的视频占比最多。
+                    </p>
+                </div>
+
+                <h4>各类视频不同属性占比（%）</h4>
+                <h4>内容：<span class="pst">正面</span>、<span class="neu">中性</span>、<span class="ngt">负面</span></h4>
+                <!-- <p> -->
+                <div id="chart6">
+                    <svg width="300" height="200"></svg>
+                </div>
+                <script>
+                    var svg = d3.select("#chart6 svg")
+                        // .attr("preserveAspectRatio", "xMidYMid meet")
+                        // .attr("viewBox", "10px 10px 300px 300px");
+                        // var width = window.innerWidth,
+                        //     height = window.innerHeight,
+                        //     innerRadius = Math.min(width, height) / 3,
+                        //     outerRadius = innerRadius + 30;
+                    margin = {
+                            top: 20,
+                            right: 20,
+                            bottom: 30,
+                            left: 50
+                        },
+                        width = +svg.attr("width") - margin.left - margin.right,
+                        height = +svg.attr("height") - margin.top - margin.bottom,
+                        g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+                    var y = d3.scaleBand() // x = d3.scaleBand()	
+                        .rangeRound([0, height]) // .rangeRound([0, width])
+                        .paddingInner(0.05)
+                        .align(0.1);
+
+                    var x = d3.scaleLinear() // y = d3.scaleLinear()
+                        .rangeRound([8, width]); // .rangeRound([height, 0]);
+
+                    var z = d3.scaleOrdinal()
+                        .range(["pink", "#A4A4A4", "rgb(190, 186, 218)", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
+                    d3.csv("data.csv", function(d, i, columns) {
+                        for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
+                        d.total = t;
+                        return d;
+                    }, function(error, data) {
+                        if (error) throw error;
+
+                        var keys = data.columns.slice(1);
+
+                        data.sort(function(a, b) {
+                            return b.total - a.total;
+                        });
+                        y.domain(data.map(function(d) {
+                            return d.State;
+                        })); // x.domain...
+                        x.domain([0, d3.max(data, function(d) {
+                            return d.total;
+                        })]).nice(); // y.domain...
+                        z.domain(keys);
+
+                        g.append("g")
+                            .selectAll("g")
+                            .data(d3.stack().keys(keys)(data))
+                            .enter().append("g")
+                            .attr("fill", function(d) {
+                                return z(d.key);
+                            })
+                            .selectAll("rect")
+                            .data(function(d) {
+                                return d;
+                            })
+                            .enter().append("rect")
+                            .attr("y", function(d) {
+                                return y(d.data.State);
+                            }) //.attr("x", function(d) { return x(d.data.State); })
+                            .attr("x", function(d) {
+                                return x(d[0]);
+                            }) //.attr("y", function(d) { return y(d[1]); })	
+                            .attr("width", function(d) {
+                                return x(d[1]) - x(d[0]);
+                            }) //.attr("height", function(d) { return y(d[0]) - y(d[1]); })
+                            .attr("height", y.bandwidth()); //.attr("width", x.bandwidth());	
+
+                        g.append("g")
+                            .attr("class", "axis")
+                            .attr("transform", "translate(0,0)") //  .attr("transform", "translate(0," + height + ")")
+                            .call(d3.axisLeft(y)); //   .call(d3.axisBottom(x));
+
+                        g.append("g")
+                            .attr("class", "axis")
+                            .attr("transform", "translate(0," + height + ")") // New line
+                            .call(d3.axisBottom(x).ticks(5, "s")) //  .call(d3.axisLeft(y).ticks(null, "s"))
+                            .append("text")
+                            .attr("y", 2) //     .attr("y", 2)
+                            .attr("x", x(x.ticks().pop()) + 12) //     .attr("y", y(y.ticks().pop()) + 0.5)
+                            .attr("dy", "0.32em") //     .attr("dy", "0.32em")
+                            .attr("fill", "#000")
+                            .attr("font-weight", "bold")
+                            .attr("text-anchor", "start")
+                            // .text("占比")
+                            .attr("transform", "translate(" + (-width) + ",-10)"); // Newline
+
+                        // var legend = g.append("g")
+                        //     .attr("font-family", "sans-serif")
+                        //     .attr("font-size", 10)
+                        //     .attr("text-anchor", "end")
+                        //     .selectAll("g")
+                        //     .data(keys.slice().reverse())
+                        //     .enter().append("g")
+                        //     //.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+                        //     .attr("transform", function(d, i) {
+                        //         return "translate(-50," + (300 + i * 20) + ")";
+                        //     });
+
+                        // legend.append("rect")
+                        //     .attr("x", width - 19)
+                        //     .attr("width", 19)
+                        //     .attr("height", 19)
+                        //     .attr("fill", z);
+
+                        // legend.append("text")
+                        //     .attr("x", width - 24)
+                        //     .attr("y", 5)
+                        //     .attr("dy", "0.32em")
+                        //     .text(function(d) {
+                        //         return d;
+                        //     });
+
+
+
+                    });
+                </script>
+            </div>
+            <!-- </div> -->
+
+
+
+
+
+
+
+
+            <div class="section " id="section11">
+                <div id="content6">
+                    <h3>🎨&nbsp;关键词色谱&nbsp;🎨</h3><br>
+
+                    <p>利用文本分词法，可撷取弹幕关键词：使用悦图线上分词工具，可得出每一类视频的弹幕关键词（按权重计算首50个词），并绘制成气泡图。气泡大小代表关键词权重，颜色代表词的倾向，分别为<span class="pst">正面</span>、<span class="ngt">负面</span>与<span class="neu">中性</span>。</p><br>
+                    <p>仅从这些关键词的字面意义上看来，分词统计有以下初步观察：</p>
+                    <ul>
+                        <li>·&nbsp;&nbsp;有关新疆地区少数民族的视频中，权重前十的弹幕关键词，正面及负面的用词占比较多</li>
+                        <li>·&nbsp;&nbsp;主题关于河南人的视频里，中性属性的弹幕关键词占大多数</li>
+                        <li>·&nbsp;&nbsp;关于黑人的视频中，正面的弹幕关键词显得多样化</li>
+                        <li>·&nbsp;&nbsp;主题关于女性的视频里的前十弹幕关键词中，正面、中性用词占比较多，但物化女性的用词也较多</li>
+                        <li>·&nbsp;&nbsp;主题关于同性恋者的视频中，中性弹幕关键词占比较多</li>
+                    </ul>
+
+                    <h4>系列分析图表见下页</h4>
+                </div>
+            </div>
+
+            <div class="section" id="section1">
+                <div class="intro">
+
+                    <!-- <div class="slide" id="slide2"> -->
+                    <h1>在关于<span class="udl">新疆地区少数民族</span>的视频中，弹幕关键词是这些......</h1>
+                    <p><span class="pst">正面</span>、<span class="neu">中性</span>、<span class="ngt">负面</span></p>
+                    <br>
+                </div>
+                <div id="chart1">
+                    <svg width="400" height="400">
+        </svg>
+                </div>
+                <script>
+                    var svg = d3.select("#chart1 svg")
+                        // .append("svg")
+                        .attr("width", diameter)
+                        .attr("height", diameter)
+                        .attr("class", "bubble")
+                        .attr("preserveAspectRatio", "xMidYMid meet")
+                        .attr("viewBox", "10px 10px 200px 200px");
+
+                    var diameter = 380,
+                        format = d3.format(",d"),
+                        color = d3.scaleOrdinal(d3.schemeSet3)
+                        .domain(["New York", "San Francisco", "Austin"])
+                        .range(["pink", "rgb(190, 186, 218)", "#BDBDBD", ]);
+
+                    var bubble = d3.pack()
+                        .size([diameter, diameter])
+                        .padding(1);
+
+                    d3.json("flare.json", function(error, data) {
+                        if (error) throw error;
+
+                        var root = d3.hierarchy(classes(data))
+                            .sum(function(d) {
+                                return d.value;
+                            })
+                            .sort(function(a, b) {
+                                return b.value - a.value;
+                            });
+
+                        bubble(root);
+                        var node = svg.selectAll(".node")
+                            .data(root.children)
+                            .enter().append("g")
+                            .attr("class", "node")
+                            .attr("transform", function(d) {
+                                return "translate(" + d.x + "," + d.y + ")";
+                            });
+
+                        node.append("title")
+                            .text(function(d) {
+                                return d.data.className;
+                            });
+
+                        node.append("circle")
+                            .attr("r", function(d) {
+                                return d.r;
+                            })
+                            .style("fill", function(d) {
+                                return color(d.data.packageName);
+                            });
+
+                        node.append("text")
+                            .attr("dy", "0.3em")
+                            .style("text-anchor", "middle")
+                            // .style('fill', 'white')
+                            .style("font-size", ".8em")
+                            .text(function(d) {
+                                return d.data.className.substring(0, d.r / 3);
+                            });
+                    });
+
+                    // Returns a flattened hierarchy containing all leaf nodes under the root.
+                    function classes(root) {
+                        var classes = [];
+
+                        function recurse(name, node) {
+                            if (node.children) node.children.forEach(function(child) {
+                                recurse(node.name, child);
+                            });
+                            else classes.push({
+                                packageName: name,
+                                className: node.name,
+                                value: node.size
+                            });
+                        }
+
+                        recurse(null, root);
+                        return {
+                            children: classes
+                        };
+                    }
+
+                    d3.select(self.frameElement).style("height", diameter + "px");
+                </script>
+
+
+                <div class="note">
+                    <!-- <p>......</p> -->
+                    <!-- <p>......</p> -->
+                    <p>......前十弹幕关键词中，</p>
+                    <p>正面及负面的用词占比较多
+                    </p>
+                    <!-- <p>图例：<span class="pst">正面</span>、<span class="ngt">负面</span>与<span class="neu">中性</span></p> -->
+                    <br>
+
+                </div>
+                <div class="pageturn">
+
+                    <p>1/5</p>
+                </div>
+
+            </div>
+
+
+
+
+
+            <!-- </div> -->
+            <div class="section" id="section21">
+
+                <div class="intro">
+                    <h1>在关于<span class="udl">河南人</span>的视频中，弹幕关键词是这些......</h1>
+                    <p><span class="pst">正面</span>、<span class="neu">中性</span>、<span class="ngt">负面</span></p>
+                    <br>
+                    <div id="chart2">
+                        <svg width="400" height="400">
+                            </svg>
+                    </div>
+                    <script>
+                        function addChart(file, target) {
+                            var diameter = 380,
+                                format = d3.format(",d"),
+                                color = d3.scaleOrdinal(d3.schemeSet3)
+                                .range(["#BDBDBD", "rgb(190, 186, 218)", "pink", ]);
+                            // .range(["rgb(255, 255, 179)", "rgb(190, 186, 218)", "rgb(141, 211, 199)", ]);
+
+                            var bubble = d3.pack()
+                                .size([diameter, diameter])
+                                .padding(1);
+
+                            var svg = d3.select("#chart2 svg")
+                                // .append("svg")
+                                .attr("width", diameter)
+                                .attr("height", diameter)
+                                .attr("class", "bubble")
+                                .attr("preserveAspectRatio", "xMidYMid meet")
+                                .attr("viewBox", "10px 10px 200px 200px");
+
+
+                            d3.json("flare2.json", function(error, data) {
+                                if (error) throw error;
+
+                                var root = d3.hierarchy(classes(data))
+                                    .sum(function(d) {
+                                        return d.value;
+                                    })
+                                    .sort(function(a, b) {
+                                        return b.value - a.value;
+                                    });
+
+                                bubble(root);
+                                var node = svg.selectAll(".node")
+                                    .data(root.children)
+                                    .enter().append("g")
+                                    .attr("class", "node")
+                                    .attr("transform", function(d) {
+                                        return "translate(" + d.x + "," + d.y + ")";
+                                    });
+
+                                node.append("title")
+                                    .text(function(d) {
+                                        return d.data.className;
+                                    });
+
+                                node.append("circle")
+                                    .attr("r", function(d) {
+                                        return d.r;
+                                    })
+                                    .style("fill", function(d) {
+                                        return color(d.data.packageName);
+                                    });
+
+                                node.append("text")
+                                    .attr("dy", ".3em")
+                                    .style("text-anchor", "middle")
+                                    // .style('fill', 'white')
+                                    .style("font-size", ".8em")
+                                    .text(function(d) {
+                                        return d.data.className.substring(0, d.r / 3);
+                                    });
+                            });
+
+                            // Returns a flattened hierarchy containing all leaf nodes under the root.
+                            function classes(root) {
+                                var classes = [];
+
+                                function recurse(name, node) {
+                                    if (node.children) node.children.forEach(function(child) {
+                                        recurse(node.name, child);
+                                    });
+                                    else classes.push({
+                                        packageName: name,
+                                        className: node.name,
+                                        value: node.size
+                                    });
+                                }
+
+                                recurse(null, root);
+                                return {
+                                    children: classes
+                                };
+                            }
+
+                            d3.select(self.frameElement).style("height", diameter + "px");
+                        }
+                        addChart("flare2.json", "div.foo");
+                    </script>
+                </div>
+
+                <div class="note">
+                    <!-- <p>......</p>
+                <p>......</p> -->
+                    <p>......前50个弹幕关键词中，</p>
+                    <p>中性用词占比较多
+                    </p>
+                    <!-- <p>图例：<span class="pst">正面</span>、<span class="ngt">负面</span>与<span class="neu">中性</span></p> -->
+                </div>
+                <div class="pageturn">
+                    <p>2/5</p>
+                </div>
+            </div>
+
+
+            <div class="section" id="section22">
+                <!-- <div class="slide" id="slide4"> -->
+                <div class="intro">
+                    <h1>在关于<span class="udl">黑人</span>的视频中，弹幕关键词是这些......</h1>
+                    <p><span class="pst">正面</span>、<span class="neu">中性</span>、<span class="ngt">负面</span></p>
+                    <br>
+                    <div id="chart3">
+                        <svg width="400" height="400">
+                            </svg>
+                    </div>
+                    <script>
+                        function addChart(file, target) {
+                            var diameter = 380,
+                                format = d3.format(",d"),
+                                color = d3.scaleOrdinal(d3.schemeSet3)
+                                .domain(["New York", "San Francisco", "Austin"])
+                                .range(["#BDBDBD", "pink", "rgb(190, 186, 218)", ]);
+
+                            var bubble = d3.pack()
+                                .size([diameter, diameter])
+                                .padding(1);
+
+                            var svg = d3.select("#chart3 svg")
+                                // .append("svg")
+                                .attr("width", diameter)
+                                .attr("height", diameter)
+                                .attr("class", "bubble")
+                                .attr("preserveAspectRatio", "xMidYMid meet")
+                                .attr("viewBox", "10px 10px 200px 200px");
+
+                            d3.json("flare3.json", function(error, data) {
+                                if (error) throw error;
+
+                                var root = d3.hierarchy(classes(data))
+                                    .sum(function(d) {
+                                        return d.value;
+                                    })
+                                    .sort(function(a, b) {
+                                        return b.value - a.value;
+                                    });
+
+                                bubble(root);
+                                var node = svg.selectAll(".node")
+                                    .data(root.children)
+                                    .enter().append("g")
+                                    .attr("class", "node")
+                                    .attr("transform", function(d) {
+                                        return "translate(" + d.x + "," + d.y + ")";
+                                    });
+
+                                node.append("title")
+                                    .text(function(d) {
+                                        return d.data.className;
+                                    });
+
+                                node.append("circle")
+                                    .attr("r", function(d) {
+                                        return d.r;
+                                    })
+                                    .style("fill", function(d) {
+                                        return color(d.data.packageName);
+                                    });
+
+                                node.append("text")
+                                    .attr("dy", ".3em")
+                                    .style("text-anchor", "middle")
+                                    .style("font-size", ".8em")
+                                    // .style('fill', 'white')
+                                    .text(function(d) {
+                                        return d.data.className.substring(0, d.r / 3);
+                                    });
+                            });
+
+                            // Returns a flattened hierarchy containing all leaf nodes under the root.
+                            function classes(root) {
+                                var classes = [];
+
+                                function recurse(name, node) {
+                                    if (node.children) node.children.forEach(function(child) {
+                                        recurse(node.name, child);
+                                    });
+                                    else classes.push({
+                                        packageName: name,
+                                        className: node.name,
+                                        value: node.size
+                                    });
+                                }
+
+                                recurse(null, root);
+                                return {
+                                    children: classes
+                                };
+                            }
+
+                            d3.select(self.frameElement).style("height", diameter + "px");
+                        }
+                        addChart("flare3.json", "div.foo");
+                    </script>
+                </div>
+
+                <div class="note">
+                    <!-- <p>......</p>
+                <p>......</p> -->
+                    <p>......弹幕关键词中，</p>
+                    <p>中性和正面用词占比较多，正面用词较多样
+                    </p>
+                    <!-- <p>图例：<span class="pst">正面</span>、<span class="ngt">负面</span>与<span class="neu">中性</span></p> -->
+                </div>
+
+                <div class="pageturn">
+                    <p>3/5</p>
+                </div>
+            </div>
+
+            <div class="section" id="section24">
+                <!-- <div class="slide" id="slide5"> -->
+                <div class="intro">
+                    <h1>在关于<span class="udl">女性</span>的视频中，弹幕关键词是这些......</h1>
+                    <p><span class="pst">正面</span>、<span class="neu">中性</span>、<span class="ngt">负面</span></p>
+                    <br>
+                    <div id="chart5">
+                        <svg width="400" height="400">
+        </svg>
+                    </div>
+                    <script>
+                        function addChart(file, target) {
+                            var diameter = 380,
+                                format = d3.format(",d"),
+                                color = d3.scaleOrdinal(d3.schemeSet3)
+                                .range(["#BDBDBD", "pink", "rgb(190, 186, 218)", ]);
+
+                            var bubble = d3.pack()
+                                .size([diameter, diameter])
+                                .padding(1);
+
+                            var svg = d3.select("#chart5 svg")
+                                // .append("svg")
+                                .attr("width", diameter)
+                                .attr("height", diameter)
+                                .attr("class", "bubble")
+                                .attr("preserveAspectRatio", "xMidYMid meet")
+                                .attr("viewBox", "10px 10px 200px 200px");
+
+                            d3.json("flare5.json", function(error, data) {
+                                if (error) throw error;
+
+                                var root = d3.hierarchy(classes(data))
+                                    .sum(function(d) {
+                                        return d.value;
+                                    })
+                                    .sort(function(a, b) {
+                                        return b.value - a.value;
+                                    });
+
+                                bubble(root);
+                                var node = svg.selectAll(".node")
+                                    .data(root.children)
+                                    .enter().append("g")
+                                    .attr("class", "node")
+                                    .attr("transform", function(d) {
+                                        return "translate(" + d.x + "," + d.y + ")";
+                                    });
+
+                                node.append("title")
+                                    .text(function(d) {
+                                        return d.data.className;
+                                    });
+
+                                node.append("circle")
+                                    .attr("r", function(d) {
+                                        return d.r;
+                                    })
+                                    .style("fill", function(d) {
+                                        return color(d.data.packageName);
+                                    });
+
+                                node.append("text")
+                                    .attr("dy", ".3em")
+                                    .style("text-anchor", "middle")
+                                    .style("font-size", ".8em")
+                                    .text(function(d) {
+                                        return d.data.className.substring(0, d.r / 3);
+                                    });
+                            });
+
+                            // Returns a flattened hierarchy containing all leaf nodes under the root.
+                            function classes(root) {
+                                var classes = [];
+
+                                function recurse(name, node) {
+                                    if (node.children) node.children.forEach(function(child) {
+                                        recurse(node.name, child);
+                                    });
+                                    else classes.push({
+                                        packageName: name,
+                                        className: node.name,
+                                        value: node.size
+                                    });
+                                }
+
+                                recurse(null, root);
+                                return {
+                                    children: classes
+                                };
+                            }
+
+                            d3.select(self.frameElement).style("height", diameter + "px");
+                        }
+                        addChart("flare5.json", "div.foo");
+                    </script>
+                </div>
+
+                <div class="note">
+                    <!-- <p>......</p>
+                <p>......</p> -->
+                    <p>......前十弹幕关键词中，
+                    </p>
+                    <p>正面、中性用词占比较多，
+                    </p>
+                    <p>
+                        *但物化女性的用词也较多
+                    </p>
+                    <!-- <p>图例：<span class="pst">正面</span>、<span class="ngt">负面</span>与<span class="neu">中性</span></p> -->
+                    <br>
+
+
+
+                </div>
+                <div class="pageturn">
+                    <p>4/5</p>
+                </div>
+            </div>
+
+
+
+            <div class="section" id="section23">
+                <!-- <div class="slide" id="slide5"> -->
+                <div class="intro">
+                    <h1>在关于<span class="udl">同性恋者</span>的视频中，弹幕关键词是这些......</h1>
+                    <p><span class="pst">正面</span>、<span class="neu">中性</span>、<span class="ngt">负面</span></p>
+                    <br>
+                    <div id="chart4">
+                        <svg width="400" height="400">
+        </svg>
+                    </div>
+                    <script>
+                        function addChart(file, target) {
+                            var diameter = 380,
+                                format = d3.format(",d"),
+                                color = d3.scaleOrdinal(d3.schemeSet3)
+                                .range(["#BDBDBD", "pink", "rgb(190, 186, 218)", ]);
+
+                            var bubble = d3.pack()
+                                .size([diameter, diameter])
+                                .padding(1);
+
+                            var svg = d3.select("#chart4 svg")
+                                // .append("svg")
+                                .attr("width", diameter)
+                                .attr("height", diameter)
+                                .attr("class", "bubble")
+                                .attr("preserveAspectRatio", "xMidYMid meet")
+                                .attr("viewBox", "10px 10px 200px 200px");
+
+                            d3.json("flare4.json", function(error, data) {
+                                if (error) throw error;
+
+                                var root = d3.hierarchy(classes(data))
+                                    .sum(function(d) {
+                                        return d.value;
+                                    })
+                                    .sort(function(a, b) {
+                                        return b.value - a.value;
+                                    });
+
+                                bubble(root);
+                                var node = svg.selectAll(".node")
+                                    .data(root.children)
+                                    .enter().append("g")
+                                    .attr("class", "node")
+                                    .attr("transform", function(d) {
+                                        return "translate(" + d.x + "," + d.y + ")";
+                                    });
+
+                                node.append("title")
+                                    .text(function(d) {
+                                        return d.data.className;
+                                    });
+
+                                node.append("circle")
+                                    .attr("r", function(d) {
+                                        return d.r;
+                                    })
+                                    .style("fill", function(d) {
+                                        return color(d.data.packageName);
+                                    });
+
+                                node.append("text")
+                                    .attr("dy", ".3em")
+                                    .style("text-anchor", "middle")
+                                    .style("font-size", ".8em")
+                                    .text(function(d) {
+                                        return d.data.className.substring(0, d.r / 3);
+                                    });
+                            });
+
+                            // Returns a flattened hierarchy containing all leaf nodes under the root.
+                            function classes(root) {
+                                var classes = [];
+
+                                function recurse(name, node) {
+                                    if (node.children) node.children.forEach(function(child) {
+                                        recurse(node.name, child);
+                                    });
+                                    else classes.push({
+                                        packageName: name,
+                                        className: node.name,
+                                        value: node.size
+                                    });
+                                }
+
+                                recurse(null, root);
+                                return {
+                                    children: classes
+                                };
+                            }
+
+                            d3.select(self.frameElement).style("height", diameter + "px");
+                        }
+                        addChart("flare4.json", "div.foo");
+                    </script>
+                </div>
+
+                <div class="note">
+                    <!-- <p>......</p>
+                <p>......</p> -->
+                    <p>......前十弹幕关键词中，
+                    </p>
+                    <p>正面、中性用词占比较多
+                    </p>
+                    <!-- <p>图例：<span class="pst">正面</span>、<span class="ngt">负面</span>与<span class="neu">中性</span></p> -->
+                    <br>
+
+
+
+                </div>
+                <div class="pageturn">
+                    <p>请继续往下滑</p>
+                </div>
+            </div>
+            <!-- </div> -->
+
+
+
+            <div class="section" id="section12">
+                <div id="content3">
+
+
+                    <h3>🤦🏽‍&nbsp;弹幕的情感🤦🏽‍&nbsp;</h3>
+                    <br>
+                    <p>记者对弹幕作出文本情感分析：在每一类视频的弹幕，以中文自然语言处理脚本BosonNLP，计算出每一句弹幕的情感值（数值由0至1，数值越大，内容越正面），再取平均值。
+                    </p><br>
+                    <p>结果显示（见下图），五类视频中，弹幕情感平均值最高的是主题关于河南的视频，其次是有女性的视频，情感平均值分别为0.4651和0.4597。有趣的是，以黑人群体为主题的视频中，内容正面的占多数，惟这类视频的弹幕情感值是五类视频中的最低。这有可能是因为视频主题虽正面，但弹幕中有较多骂战或歧视出现。（注：本次分析采用了BosonNLP的微博模型，较为切合弹幕文本的评论属性。）
+                    </p>
+
+                    <div class="img_center"><img src="images/graph03.png"></div>
+                </div>
+
+
+            </div>
+
+
+            <!-- <div class="section" id="section10">
+                <div id="content5">
+
+                    <h3></h3><br>
+                    <p>记者再对弹幕作出文本情感分析：在每一类视频中，随机抽取100句弹幕，以中文自然语言处理脚本SnowNLP，计算出每一句弹幕的情感值（数值由0至1，数值越大表示语句用词越正面），再取平均值。
+                    </p><br>
+                    <p>结果显示，四类视频中，弹幕情感平均值最高的是有关同性恋者的视频，情感平均值为0.5037。值得一提的是，B站内容以日本动漫文化为主流，以同性之间的爱情为创作题材的“BL向”和“百合向”作品，是当中的一大类目。这或许是影响弹幕情感值高低的原因之一。
+                    </p><br>
+                    <p>然而，由于SnowNLP目前的训练数据主要来自电商平台上的购物评价，因此对其他文本的分析或未如理想，所以，四大类别之间的比较仅供参考。
+                    </p><br>
+
+                    <p>各类别综合排名首五视频的弹幕情感值：</p>
+                    <br>
+                    <p><img src="images/indvid.png"></p>
+                    <br>
+
+
+
+                </div>
+
+
+
+
+
+            </div> -->
+
+
+            <div class="section" id="section15">
+                <div id="content8">
+                    <h3>🤔&nbsp;隐喻和指代，歧视的暗号&nbsp;🤔</h3>
+                    <br>
+                    <p>然而，无论是情感分析法，还是分词统计，都无法准确提炼出弹幕中的隐晦用语——<span class="udl">很多时候，歧视和仇视的言论，都会以隐喻的形式出现。</span>并且，像B站这种自身文化基因强大的网站，用户自然地发展出一套方便交流的俚语和暗号。这类词语一般不会收录在文本分析工具的语料库中。</p>
+                    <br>
+                    <p>人工检视随机抽样得来的弹幕，可以发现以下隐晦的歧视和讽刺言论：在关于新疆的视频里，会出现“猪肉”“吃块红烧肉压压惊”等弹幕。此外，弹幕中也会出现“绿”“绿化”等关于宗教象征。
+                    </p>
+                    <!-- <br>
+            <h3>弹幕礼仪：禁止人身攻击和“比较”
+            </h3>
+            <br> -->
+                    <br>
+                    <p>此类弹幕容易引起骂战：当歧视言论出现时，通常也会有持相反意见的用户发言指“说话注意文明”，或者会说“……我一个新疆人真的看不下去你们这些说少数民族的……”。也会有一些自称围观群众的人说“那啥，b站对于这类（视频）主要有两派人——仇穆和圣母，我就围观好了”。
+                    </p>
+                    <br>
+                    <p>类似的情况也出现在以其他群体为主题的视频中。其中，在关于河南的视频的弹幕里，“井盖”一个常见的地域歧视符号，而反对地域歧视的人会发出类似“河南人吃你家米了”的弹幕。
+                    </p><br>
+                    <p>此外，若一段视频的弹幕骂战太过激烈，或者被举报次数太多，B站就有可能删除该视频中的全部弹幕。记者在此次统计中发现一段视频的弹幕被删除（此前对该视频的弹幕有过初步研究，后发现弹幕被删除）。而对于其他零弹幕的视频，但由于难以判断该视频究竟是没有人发过弹幕，还是弹幕被清零，因此未作统计。</p><br>
+                    </p><br>
+
+                    <!-- <div class="img_center"><img src="images/graph02.png"></div> -->
+                </div>
+
+
+            </div>
+
+            <div class="section" id="section15">
+                <div id="content8">
+                    <h3>🤐&nbsp;网络空间：究竟是促进融合，还是放大隔阂？&nbsp;🤐</h3>
+                    <br>
+                    <p>作家萧亮中曾经写道，凡是一个群体对另一个群体抱有共同的，具有从众倾向的态度时，歧视就发生在这些强势和弱势群体的对话之中。<span class="udl">“歧视作为各种群体之间的‘对话’延续了整个历史。”</span></p><br>
+                    <p>此一现象，亦如是体现在B站中。
+                    </p>
+                    <!-- <br>
+            <h3>弹幕礼仪：禁止人身攻击和“比较”
+            </h3>
+            <br> -->
+                    <!-- <br>
+                <p>此类弹幕容易引起骂战：当带有歧视与仇恨的言论出现时，通常也会有持相反意见的用户发言指“说话注意文明”，或者会说“……我一个新疆人真的看不下去你们这些说少数民族的……”。也会有一些自称围观群众的人说“那啥，b站对于这类（视频）主要有两派人——仇穆和圣母，我就围观好了”。
+                </p> -->
+                    <br>
+                    <p>河北大学学者白贵等人写过一篇关于国内网络传播民族歧视或仇恨言论的文章。当中提及，网络上既有大量对少数民族的歧视或仇恨言论，也有不少对汉族同胞的类似言论。在相关的言论中，有些扭曲基本事实，有些彻底否定一个民族等。他又提到，由于历史、经济、文化等诸多因素影响，少数民族的话语权普遍处于弱势地位，所以通常是歧视或仇恨言论的受害者。
+                    </p><br>
+                    <p>究竟网络空间，是促进融合，还是放大隔阂？中国青年政治学院新闻与传播系学者何晶等人曾如此发问。她们在一个关于网络论坛种族歧视的研究中发现，论坛更多地起到了发泄怨气、强化偏见的作用，<span class="udl">将人们潜藏的歧视心理公开。</span>李立峯也曾写过，当网络充斥着大量不文明话语时，人们会变得不敢发布意见。一个侧面的反映是，当记者寻找少数民族受访者时，也会得到“感觉这种话题......（不方便说）”的回应。
+                    </p><br>
+                    <p>不过，何晶等人也在研究中看到，<span class="udl">“互联网能够令人期待的，或许就是经过一个自然论辩的过程，可能会形成一种抑制极端情绪的氛围。”</span> （注：报道已屏蔽弹幕中的脏话）
+                    </p>
+                </div>
+                <!-- <div class="img_center"><img src="images/graph02.png"></div> -->
+                <!-- </div>
+
+
+    </div> -->
+
+                <!-- <div class="section active" id="section6"> -->
+                <!-- <div id="infograph"><img src="images/graph01.png"></div>
+        <div id="dmk"><br><img src="images/dmk.png"><br><br><br>
+            <p>B站弹幕截图</p>
+        </div> -->
+                <!-- <div id="vidind"><img src="images/indvid.png"></div> -->
+                <!-- <div id="content2"> -->
+                <!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/logo.png"></p><br> -->
+                <!-- <p>“刷番”（看剧）时，你看到弹幕（注：网络视频播放器上的实时评论功能）里有剧透会很生气。也有些时候，你需要弹幕“护体”，因为视频剧情太渗人了……</p>
+            <br>
+            <p>那你是否也会留意到，弹幕中那些经常出现的骂战与歧视？</p><br> -->
+                <!-- <h3>隐喻和指代，歧视的暗号
+                </h3>
+                <br>
+
+                <p>然而，报道中用到的文本情感分析法，以及分词关键词统计工具，或许都无法准确提炼出弹幕中的隐晦用语——很多时候，网络上那些带有歧视和仇视的言论，都会以隐喻或指代的形式出现。并且，像B站这种自身文化基因强大的网站，用户群体自然地发展出方便交流的俚语和暗号。这类词语一般不会收录在文本分析工具的语料库中。</p>
+                <br>
+                <p>人工检视随机抽样得来的弹幕，可以发现以下隐晦的歧视和讽刺言论：在关于新疆的视频里，会出现“猪肉”“吃块红烧肉压压惊”等有关宗教信条的弹幕。此外，弹幕中也会出现“绿”“绿化”等关于宗教象征。
+                </p> -->
+                <!-- <br>
+            <h3>弹幕礼仪：禁止人身攻击和“比较”
+            </h3>
+            <br> -->
+                <!-- <br>
+                <p>此类视频容易引起骂战：当带有歧视与仇恨的弹幕出现时，通常也会有持相反意见的用户发弹幕提出“说话注意文明”，或者会说“……我一个新疆人真的看不下去你们这些说少数民族的……”。也会有一些自称围观群众的人说“那啥，b站对于这类（视频）主要有两派人——仇穆和圣母，我就围观好了”。
+                </p>
+                <br>
+                <p>类似的情况也出现在以河南、黑人、和同性恋者为题的视频中。其中，在关于河南的视频，“井盖”是这类视频的弹幕中，一个常见的地域歧视符号，而反对地域歧视的人会发出类似“河南人吃你家米了”的弹幕。
+                </p><br>
+                <p>此外，若一段视频的弹幕骂战太过激烈（有另一种说法是被举报次数太多），B站就有可能删除该视频中的全部弹幕，记者在此次统计中发现一段视频的弹幕被删除（此前对该视频的弹幕有过初步研究，后来发现弹幕被删除）。而对于其他零弹幕的视频，但由于难以判断该视频究竟是没有人发过弹幕，还是弹幕被清零，因此未作统计。</p><br>
+                </p><br> -->
+                <!-- <h3>网络空间：促进融合，还是放大隔阂？
+        </h3>
+        <br>
+        <p>拥有人类学背景的作家萧亮中曾经写道，凡是一个群体对另一个群体抱有共同的，具有从众倾向的态度时，歧视就发生在这些强势和弱势群体的对话之中。“歧视作为各种群体之间的“对话”延续了整个历史。”</p><br>
+        <p>此一现象，亦如是体现在B站中。
+        </p><br> -->
+                <!-- <h3>弹幕中蕴含的情感
+            </h3><br> -->
+                <!-- <p>河北大学学者白贵等人写过一篇关于国内网络空间民族歧视或仇恨言论传播的文章。当中提及，国内网络空间，既有大量对少数民族的歧视或仇恨言论，也有不少对汉族同胞的类似言论。在相关的言论中，有些扭曲基本事实，有些彻底否定一个民族等。他又提到，由于历史、经济、文化、语言等诸多因素的影响，少数民族的话语权总体上处于弱势地位，所以通常是歧视或仇恨言论的受害者。
+        </p><br>
+        <p>究竟网络空间，是促进融合，还是放大隔阂？中国青年政治学院新闻与传播系学者何晶等人曾如此发问。她们在一个关于网络论坛种族歧视现象的研究中发现，论坛更多地起到了发泄怨气、强化偏见的作用，将人们潜藏的种族歧视心理公开。李立峯的文章也写到，当网络充斥着大量不文明话语时，人们会变得不敢发布意见。
+        </p><br>
+        <p>一个侧面的反映是，当记者寻找少数民族受访者时，也会得到“感觉这种话题（不方便说）”的回应。
+        </p><br>
+
+        <p>不过，何晶等人也在研究中看到，网络世界有着不同的声音、态度与意见。“互联网能够令人期待的，或许就是经过一个自然论辩的过程，可能会形成一种抑制极端情绪的氛围。”</p>
+        <br> -->
+                <!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/indvid.png"></p>
+            <br>
+
+            <h3>关键词色谱</h3><br>
+
+            <p>文本分词提供另一个分析角度。利用悦图线上分词工具，得出每一类视频的弹幕关键词（按权重计算首50个词），并绘制成气泡图。气泡大小代表关键词权重，颜色代表词的倾向。这个初步的统计结果显示，在有关新疆地区少数民族的视频里，前十个弹幕关键词中，正面及负面的用词占比较多；主题关于河南人的视频中，弹幕关键词以中性用词为主；关于黑人的视频里，前十个弹幕关键词中，正面和中性用词各占大约一半；而在有关同性恋者的视频里，前十弹幕关键词中，中性用词占就比较多。
+
+            </p> -->
+
+
+            </div>
+
+
+
+
+
+            <!-- </div> -->
+
+
+            <div class="section" id="section2">
+                <div class="intro">
+                    <div class="foo">
+                        <!-- <h2>隐喻？歧视？请你帮忙识别这些弹幕：</h2> -->
+                        <br>
+                        <!-- <p>Content is a priority.Even if it is so large :)</p> -->
+                        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWTG5gvxdDOIBUOloD9Ra3iWZTme7aiMxiBvwb7rFEz2SpJA/viewform?embedded=true" width="200" height="220" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+                        <!-- <div id="form">
+                    <form>
+                        <label>First Name</label>
+                        <input type="text" id="firstName" />
+                        <label>Last Name</label>
+                        <input type="text" id="lastName" />
+                        <label>City</label>
+                        <input type="text" id="city" />
+                        <label>Email</label>
+                        <input type="email" id="email" />
+                        <input type="submit" id="submit" />
+                    </form>
+                    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+                    <script src="google-form.js"></script>
+                </div> -->
+                        <br><br>
+                        <p>记者、开发工程师：陈嘉慧</p>
+                        <p>封面设计：韩昕朔</p>
+                        <p>Updated on Sep 10, 2017</p>
+                        <br>
+                        <a href="note.html" target="_blank">方法论与附录</a>
+                        <a href="full.html" target="_blank">Version 1</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
